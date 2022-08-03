@@ -29,7 +29,7 @@ const options = {
             const intrvalId = setInterval(() => {
             const currentDate = Date.now();
             const delta = choiceDate - currentDate;
-                if (delta <= 0) {
+                if (delta < 100) {
                     clearInterval(intrvalId);
                     return
                 };
